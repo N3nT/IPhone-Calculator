@@ -1,0 +1,70 @@
+/*
+    #1C1C1C Eerie Black
+    #505050 Dark Liver
+    #D4D4D2 Light Gray
+    #FF9500 Vivid Gamboge
+*/
+*{
+    padding: none;
+    margin: none;
+}
+body{
+    background-color: #404241;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    font-family: 'Oxygen', sans-serif;
+}
+.calc_wrap{
+    background-color: #1c1c1c;
+    color: white;
+    width: 420px;
+    height: 690px;
+    border: 1px solid #999999;
+}
+.calc_date{
+    text-align: center;
+    padding: 3px;
+    font-size: 14px;
+}
+.calc_screen{
+    text-align: right;
+    margin: 50px 20px 30px 0;
+    font-size: 68px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+button{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    font-size: 40px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #333333;
+    transition: 0.2s;
+}
+button:hover{
+    filter: brightness(130%);
+    transition: 0.2s;
+}
+.light_gray{
+    background-color: #D4D4D2;
+    color: #1c1c1c;
+}
+.orange{
+    background-color: #FF9500;
+    color: white;
+}
+.orange:focus{
+    filter: brightness(130%);
+}
+.longer{
+    width: 200px;
+    border-radius: 90px;
+}
