@@ -20,7 +20,8 @@ body{
     background-color: #1c1c1c;
     color: white;
     width: 420px;
-    height: 690px;
+    min-height: 690px;
+    max-height: 1200px;
     border: 1px solid #999999;
 }
 .calc_date{
@@ -30,8 +31,14 @@ body{
 }
 .calc_screen{
     text-align: right;
-    margin: 50px 20px 30px 0;
-    font-size: 68px;
+    margin: 50px 10px 30px 10px;
+    font-size: 62px;
+    max-width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    letter-spacing: 4px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 .row{
     display: flex;
@@ -60,9 +67,11 @@ button:hover{
 .orange{
     background-color: #FF9500;
     color: white;
+    transition: ease-in-out;
 }
 .orange:focus{
-    filter: brightness(130%);
+    color: #FF9500;
+    background-color: white;
 }
 .longer{
     width: 200px;

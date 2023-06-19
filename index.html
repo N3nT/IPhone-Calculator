@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="style.css">
     <title>JS - Calculator</title>
 </head>
-<body>
+<body onload="startTime()">
     <div class="calc_wrap">
-        <div class="calc_date">18:30</div>
-        <div class="calc_screen">0</div>
+        <div class="calc_date" id="calc_date"></div>
+        <div class="calc_screen" id="screen_value">0</div>
         <div class="row">
-            <button onclick="" class="light_gray" value="C">C</button>
-            <button onclick="" class="light_gray" value="+/-">+/-</button>
-            <button onclick="" class="light_gray" value="%">%</button>
+            <button onclick="Clear()" class="light_gray" value="C">C</button>
+            <button onclick="Change()" class="light_gray" value="+/-">+/-</button>
+            <button onclick="Percent()" class="light_gray" value="%">%</button>
             <button onclick="" class="orange" value="/">&divide;</button>
         </div>
         <div class="row">
@@ -39,7 +39,7 @@
         </div>
         <div class="row">
             <button onclick="" class="longer" value="0">0</button>
-            <button onclick="" value=",">,</button>
+            <button onclick="" value=".">.</button>
             <button onclick="" class="orange" value="=">=</button>
         </div>
     </div>
